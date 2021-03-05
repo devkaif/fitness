@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaif Fitness Club</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('bg.jpg');
+            height: 0px;
+            color: white;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            /* border: 2px solid green; */
+            position: absolute;
+            left: 34px;
+            top: 11px;
+
+
+        }
+
+        .mid {
+            /* border: 2px solid yellow; */
+            display: block;
+            width: 49%;
+            margin: 12px auto;
+        }
+
+        .right {
+            display: inline-block;
+            /* border: 2px solid green; */
+            position: absolute;
+            right: 34px;
+            top: 11px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            font-size: 25px;
+
+        }
+
+        .navbar li a:hover
+         {
+            text-decoration: underline;
+            color:rgb(138, 69, 5);
+        
+        }
+
+        .left img{
+            height: 50px;
+            width: 144px;
+        }
+        .left div{
+            text-align: center;
+        }
+        .btn{
+            background-color: transparent;
+            color: white;
+            padding: 3px 4px;
+            margin: 15px 10px;
+            border: 2px solid grey;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(117, 115, 115);
+            color: white;
+        }
+        .container{
+            padding: 19px 29px;
+            margin: 229px 924px;
+            /* border: 2px solid red; */
+            width: 33%;           
+        }
+        .formgroup input{
+            text-align: center;
+            display: block;
+            width: 280px;
+            border: 2px solid rgb(2, 2, 2);
+            padding: 4px 5px;
+            margin: 4px auto;
+            border-radius: 5px;
+        }
+        .container h1{
+            text-align: center;
+            font-size: 40px;
+            color: rgb(216, 125, 51);
+        }
+        .container button{
+            display: block;
+            width: 58%;
+            margin: 10px auto;
+            font-size: 25px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.jpg" alt="" class="logo">
+            <div>KAIF FITNESS</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+        <div class="container">
+            <h1>
+                <em>
+                Join the best fitness club
+
+            </em>
+            </h1>
+            <form action="back.php">
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your Age">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your Gender">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your Address">
+                </div>
+            </form>
+            <div>
+                <button class="btn">Submit Now</button>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
